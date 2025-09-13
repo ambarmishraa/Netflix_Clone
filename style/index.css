@@ -1,10 +1,132 @@
 * {
     padding: 0;
     margin: 0;
+    background-color: var(--primary-color);
+    overflow-x: hidden;
 }
 
 :root {
-  --primary-color: #000000; 
-  --secondary-color: #E50914;
-  --tertiary-color: #FFFFFF;
+    --primary-color: #000000;
+    --secondary-color: #E50914;
+    --tertiary-color: #FFFFFF;
+}
+
+.home-section {
+    width: 100vw;
+    display: flex;
+}
+
+.sidebar {
+    /* background-color: red !important; */
+    width: 10%;
+}
+
+.sidebar img {
+    width: 24px;
+    margin-bottom: 35px;
+    cursor: pointer;
+}
+
+.sidebar-center {
+    width: max-content;
+    margin: 0 auto;
+}
+
+.sidebar-search {
+    padding-top: 70px;
+}
+
+.header {
+    background-color: blue;
+    /* height: 100vh; */
+    width: 100%;
+}
+
+.header-title {
+    background-color: purple;
+    height: 60%;
+    display: flex;
+}
+
+.movie-info {
+    color: white;
+    background-color: red;
+    width: 50%;
+}
+
+.movie-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.movie-image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.movie-desc-1 {
+    display: flex;
+}
+
+.movie-desc-img, .movie-rating{
+    width: max-content;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.movie-desc-img img {
+    width: 15.18px;
+    height: 25px;
+}
+
+.movie-desc-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-name-span {
+    color: var(--secondary-color);
+}
+
+.movie-desc-1 h5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-rating img {
+    width: 32px;
+}
+
+.movie-info-1{
+    height: 70%;
+    padding-left: 25px;
+}
+
+.play-watch-btn{
+    display: flex;
+    justify-content: start;
+    column-gap: 20px;
+    height: 30%;
+    padding-left: 25px;
+}
+
+.play-watch-btn button{
+    width: 124.66px;
+    height: 44px;
+    border-radius: 62px;
+    border: none;
+}
+
+.play-btn button{
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+.watch-btn button{
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
 }
